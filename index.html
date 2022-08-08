@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>TEST DYMO SDK</h1>
+    <div style="margin-bottom: 10px;">
+        <button onclick="init()">INIT</button>
+        <button onclick="check()">CHECK ENVIRONMENT</button>
+        <button onclick="getImprimantes()">GET PRINTERS</button>
+    </div>
+    <div style="margin-bottom: 10px;">
+        Nom: <input id="name" type="text" value="Jean-Michel">
+        Addresse 1: <input id="address_1" type="text" value="12 rue de la paix">
+        Addresse 2: <input id="address_2" type="text" value="33000, BORDEAUX">
+    </div>
+    <div style="margin-bottom: 10px;">
+        <button onclick="generatePreview()">Générer Preview</button>
+        <button onclick="print()">Imprimer</button>
+    </div>
+    <div>
+        Preview: <img id="labelpic" src="" alt="" style="border: 1px solid black;">
+    </div>
+
+</body>
+<script src="http://labelwriter.com/software/dls/sdk/js/dymo.connect.framework.js"></script>
+<script src="dymotest.js"></script>
+</html>
