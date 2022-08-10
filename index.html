@@ -16,15 +16,25 @@
     </div>
     <div style="margin-bottom: 10px;">
         Nom: <input id="name" type="text" value="Jean-Michel">
-        Addresse 1: <input id="address_1" type="text" value="12 rue de la paix">
+        Addresse 1: <input id="address_1" type="text" value="48 rue Thiac">
         Addresse 2: <input id="address_2" type="text" value="33000, BORDEAUX">
+    </div>
+    <div style="margin-bottom: 20px;">
+        Imprimantes:
+        <select name="printers" id="selected_printer">
+
+        </select>
     </div>
     <div style="margin-bottom: 10px;">
         <button onclick="generatePreview()">Générer Preview</button>
-        <button onclick="print()">Imprimer</button>
+    </div>
+    <div style="margin-bottom: 20px;">
+        Preview: <img id="labelpic" src="" alt="" style="border: 1px solid black;">
     </div>
     <div>
-        Preview: <img id="labelpic" src="" alt="" style="border: 1px solid black;">
+        <button onclick="print()">PRINT CLASSIQUE</button>
+        <button onclick="print(true)">PRINT LABELSET EMPTY</button>
+        <button onclick="printFromLabel()">PRINT FROM LABEL</button>
     </div>
 
 </body>
